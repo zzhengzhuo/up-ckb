@@ -1,7 +1,7 @@
-import {Provider, Reader} from '@lay2/pw-core';
-import {UPCKBBaseProvider} from '../build/main';
-import {UPAuthResponse} from 'up-core';
-import {ecsign, hashPersonalMessage, toRpcSig} from 'ethereumjs-util';
+import { Provider, Reader } from '@lay2/pw-core';
+import { UPCKBBaseProvider } from '../build/main';
+import { UPAuthResponse } from 'up-core';
+import { ecsign, hashPersonalMessage, toRpcSig } from 'ethereumjs-util';
 const privateKeyToAddress = require('ethereum-private-key-to-address');
 
 export class UPCKBSecp256K1Provier extends UPCKBBaseProvider {
@@ -31,7 +31,7 @@ export class UPCKBSecp256K1Provier extends UPCKBBaseProvider {
     ).serializeJson();
 
     // convert to hex string
-    return {keyType, pubkey, sig};
+    return { keyType, pubkey, sig };
   }
 
   k1PersonalSign(hash: string) {

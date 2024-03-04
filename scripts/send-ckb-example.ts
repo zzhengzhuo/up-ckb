@@ -7,7 +7,7 @@ import {
   OutPoint,
 } from '@lay2/pw-core';
 import UPCKB from '../build/main/';
-import {UPCKBSecp256K1Provier} from './up-ckb-secp256k1-provider';
+import { UPCKBSecp256K1Provier } from './up-ckb-secp256k1-provider';
 
 const CKB_NODE_URL = 'https://testnet.ckb.dev';
 const CKB_INDEXER_URL = 'https://testnet.ckb.dev/indexer';
@@ -19,8 +19,7 @@ const ASSET_LOCK_DEP_TX_HASH =
 
 // eth address 0x08313c282553cD1f2a32B8E45d8b072012520a72
 const username = 'upckbtest';
-const privateKey =
-  '';
+const privateKey = '';
 
 const toAddress = new Address(
   'ckt1qyq8m9zkye6exf6wely5853kldwrn5u3y8usk56lwt',
